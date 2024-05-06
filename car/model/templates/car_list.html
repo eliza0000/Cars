@@ -1,0 +1,10 @@
+<ui>
+    {% for car in cars %}
+    <li>
+        <p><a href="{% url 'car_detail' car.pk %}">{{car.car_name}}</a></p>
+        <p>Date: {{car.created_date}}</p>
+    </li>
+    {% endfor %}
+</ui>
+
+<button><a href="{% url 'car_create' %}">Create</a></button>

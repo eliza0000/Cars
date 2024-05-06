@@ -1,0 +1,9 @@
+<form method="post">
+
+    {% csrf_token %}
+
+    <p>Are you sure want to delete ?</p>
+    <button type="submit">YES</button>
+</form>
+
+<button><a href="{% url 'car_list' %}"> NO </a></button>
